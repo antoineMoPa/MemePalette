@@ -25,7 +25,7 @@ export default {
     if(route == null){
         this.route = "/";
     } else {
-        this.route = route[0].replace("?","");
+        this.route = route[0].replace("?","").replace('/MemePalette','');
     }
   }
 };
