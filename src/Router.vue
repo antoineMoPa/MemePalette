@@ -1,8 +1,8 @@
 <template>
   <div>
-    <App v-if="route == '/'"/>
     <About v-if="route == 'about'"/>
-    <Clear v-if="route == 'clear'"/>
+    <Clear v-else-if="route == 'clear'"/>
+    <App v-else/>
   </div>
 </template>
 
