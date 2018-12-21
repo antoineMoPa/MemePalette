@@ -93,7 +93,7 @@ export default {
   padding-right:20px;
   font-size:120%;
 }
-.instructions,h2,h3,p{
+.instructions,h1,h2,h3,p{
   padding-left:20px;
   padding-right:20px;
 }

@@ -10,6 +10,10 @@
           <img v-bind:src="image.dataURL" class="meme-image">
           <a href="#" class="delete-link" v-on:click="deleteimage(image.id)" onclick="event.preventDefault()">Delete</a>
         </div>
+        <p v-if="images.length == 0">
+          <br>
+          You have no images. Start uploading pictures to see them appear here!
+        </p>
 
         <h2>Upload</h2>
         <p>Click in the box bellow or drag and drop images in the box.</p>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <App v-if="route == ''"/>
+    <App v-if="route == '/'"/>
     <About v-if="route == 'about'"/>
     <Clear v-if="route == 'clear'"/>
   </div>
@@ -21,7 +21,12 @@ export default {
     };
   },
   mounted(){
-    this.route = window.location.href.match(/[^/]*$/);
+    let route = window.location.href.match(/\?.*$/);
+    if(route == null){
+        this.route = "/";
+    } else {
+        this.route = route[0].replace("?","");
+    }
   }
 };
 </script>
