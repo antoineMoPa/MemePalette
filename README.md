@@ -14,7 +14,13 @@ Then, in container:
     npm run dev
 
 # build for production with minification
-npm run build
+
+    npm run build
 
 # build for production and view the bundle analyzer report
-npm run build --report
+
+    npm run build --report
+
+# Push to gh-pages
+
+    git subtree push --prefix dist origin gh-pages
